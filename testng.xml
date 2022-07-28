@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-  <test name="Annotations">
-      <classes>
-          <class name="TestCaseII">
-              <methods>
-                  <include name="start"/>
-                  <include name="news"/>
-              </methods>
-          </class>
-          <class name="TlinkedWithTestCaseII">
-              <methods>
-                  <include name="Try"/>
-                  <include name="AgainTry"/>
-              </methods>
-          </class>
-      </classes>
-  </test>
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+    <test name="test1">
+        <classes>
+            <class name="Parallel"/>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <classes>
+            <class name="ParallelII"/>
+        </classes>
+    </test>
 </suite>
