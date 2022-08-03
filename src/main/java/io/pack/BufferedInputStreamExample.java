@@ -1,3 +1,5 @@
+package io.pack;
+
 import java.io.*;
 public class BufferedInputStreamExample{
     public static void main(String[] args){
